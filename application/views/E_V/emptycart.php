@@ -12,7 +12,9 @@
     <div class="Login_V">
        <?php echo form_open('E_C/Login_C/viewcart');?>
   <form  action="<?php echo base_url('E_C/Login_C/viewcart');?>" method="post">
-  <div class="emptycart">Your cart is empty</div>
+  <div class="emptycart">Your cart is empty    
+       <span> <button class="back"><a href="<?php echo base_url('product_dashboard');?>">Back</a></button><span>
+</div>
   </form>
 </div>
 </body>
@@ -26,5 +28,6 @@
     align-items: center;
     height:80vh;
 }
+.back{background-color: black;color: white;padding: 0.7rem;border: none;margin-top: 0.4rem;}
 
 </style>

@@ -184,9 +184,6 @@ public function update_profile(){
 public function update_quantity() {
     $itemId = $this->input->post('itemId');
     $newQuantity = $this->input->post('newQuantity');
-
-    // Update the quantity in the database
-    // Replace 'your_table' and 'id' with your actual table and column names
     $this->db->where('id', $itemId);
     $this->db->update('your_table', ['quantity' => $newQuantity]);
     echo "Quantity updated successfully";
@@ -214,11 +211,9 @@ public function about_us(){
     $this->load->view('E_V/about_us');
 }
 public function sellar(){
-    $this->load->view('E_V/Dashboard_V');
     $this->load->view('E_V/Become_sellar');
 }
 public function after_buy(){
-    $this->load->view('E_V/Dashboard_V');
     $this->load->view('E_V/suc_pur');
 }
 }
