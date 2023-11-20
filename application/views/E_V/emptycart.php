@@ -17,7 +17,13 @@
 </div>
 </body>
 <style>
-.emptycart{position:relative;display: flex;text-align: center;justify-content: center;   align-items: center;
-    height: 80vh; /* Adjust the height as needed */}
-
+.emptycart
+{
+    position:relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
 </style>
