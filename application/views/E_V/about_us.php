@@ -7,8 +7,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-<?php echo form_open('aboutus');?>
-    <form action="<?php echo base_url('aboutus');?>" method="post">
+<?php echo form_open('about_us');?>
+    <form action="<?php echo base_url('about_us');?>" method="post">
     <div class="aboutus">
        <img src="https://cdn.pixabay.com/photo/2017/08/07/19/45/ecommerce-2607114_1280.jpg" style="width:40%;height:20%;object-fit:contain;">
        <p class="text">Toogl promotes their core value of remote working throughout their website and

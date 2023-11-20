@@ -8,7 +8,7 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <form action="<?php echo base_url('E_C/Login_C/search');?>" method="post">
+    <form action="<?php echo base_url('search');?>" method="post">
     <?php $id= $this->session->userdata('userid');?>
     <nav class="navbar">
     <span class="login"><a href="product_dashboard">logo</a></span>
@@ -20,9 +20,9 @@
     <div class="mb-3">
     <span class="Products">Products <i class="fa-solid fa-caret-down"></i></span> 
     <ul class="products_ul">
-   <li class="Products_li"><a href="<?php echo base_url('E_C/Login_C/search?tag='.'laptop');?>">Laptop</a></li><br>
-   <li class="Products_li"><a href="<?php echo base_url('E_C/Login_C/search?tag='.'phone');?>">cellphone</a></li><br>
-   <li class="Products_li"><a href="<?php echo base_url('E_C/Login_C/search?tag='.'earphone');?>">earphones</a></li><br>
+   <li class="Products_li"><a href="<?php echo base_url('search?tag='.'laptop');?>">Laptop</a></li><br>
+   <li class="Products_li"><a href="<?php echo base_url('search?tag='.'phone');?>">cellphone</a></li><br>
+   <li class="Products_li"><a href="<?php echo base_url('search?tag='.'earphone');?>">earphones</a></li><br>
 </ul>
     </div>
     <div class="mb-3">
@@ -36,7 +36,7 @@
     <div class="search_product">
     <span><input type="text" name="search_tags" class="search"><span>
     <span class="search_i">
-        <a href="<?php echo base_url('E_C/Login_C/search');?>">
+        <a href="<?php echo base_url('search');?>">
         <button name="search" type="submit"><i class="fa-solid fa-magnifying-glass"  style="color:black;">
         </i></button></a>
     </span>
@@ -48,12 +48,12 @@
    <div class="mb-3P">
    <span class="Profile"><i class="fa-solid fa-user"></i> <span class="Profile" id="m_h"></span> <i class="fa-solid fa-caret-down down1" ></i></span>  
    <ul class="Profile_ul">
-   <li class="Profile_li"><a href="<?php echo base_url('E_C/Login_C/update_profile?id='.$id);?>">Update</a></li><br>
+   <li class="Profile_li"><a href="<?php echo base_url('profile_update?id='.$id);?>">Update</a></li><br>
    <li class="Profile_li"><a href="<?php echo base_url('login');?>">Logout</a></li><br>
    </ul>
     </div>
     <div class="cart">
-    <a href="<?php echo base_url('E_C/Login_C/cart');?>">
+    <a href="<?php echo base_url('cart');?>">
     <i class="fa-solid fa-cart-shopping"></i>
     <span class="cart_s" id="m_h">Cart</span>
     </a>
