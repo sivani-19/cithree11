@@ -13,7 +13,6 @@
         <div class="sales">
             <table>
                 <tr>
-                    
                     <th>Product</th>
                     <th>Product details</th>
                     <th>Amount</th>

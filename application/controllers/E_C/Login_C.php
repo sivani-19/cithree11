@@ -217,5 +217,9 @@ public function sellar(){
     $this->load->view('E_V/Dashboard_V');
     $this->load->view('E_V/Become_sellar');
 }
+public function after_buy(){
+    $this->load->view('E_V/Dashboard_V');
+    $this->load->view('E_V/suc_pur');
+}
 }
 ?>

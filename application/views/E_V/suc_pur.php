@@ -10,11 +10,11 @@
 <body>
 <div class="centered-text">
     <div class="Login_V">
-       <?php echo form_open('E_C/Login_C/product_display');?>
-  <form  action="<?php echo base_url('E_C/Login_C/product_display');?>" method="post">
+       <?php echo form_open('product_dashboard');?>
+  <form  action="<?php echo base_url('product_dashboard');?>" method="post">
   <div class="success">
     <span class="success1">You  are successfully purchased<br>
-       <span> <button class="back"><a href="<?php echo base_url('E_C/Login_C/product_dashboard');?>">Back</a></button><span>
+       <span> <button class="back"><a href="<?php echo base_url('product_dashboard');?>">Back</a></button><span>
     </span>
 </div>
   </form>

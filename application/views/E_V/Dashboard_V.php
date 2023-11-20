@@ -41,10 +41,7 @@
         </i></button></a>
     </span>
     </div>
-    <div class="notification">
-   <span><i class="fa-solid fa-envelope"></i></span>
-   <span class="message_s " id="m_h">Message</span>
-    </div>
+  
    <div class="mb-3P">
    <span class="Profile"><i class="fa-solid fa-user"></i> <span class="Profile" id="m_h"></span> <i class="fa-solid fa-caret-down down1" ></i></span>  
    <ul class="Profile_ul">
@@ -134,12 +131,12 @@
     .mb-3 span{display: flex;width: 100%;}
     .Products{display: flex;align-items: flex-start;justify-content:flex-start;position: relative;}
     .Products i{display: flex;justify-content: flex-end;align-items:end;position: relative;margin-top: 0.1rem;margin-left: 1rem;}
-    .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;position: relative;}
+    .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:0rem auto;position: relative;}
     .menu{display:none;flex-direction: column;height:100%;position:fixed;background-color: black;left:0%;z-index:2;padding-top: 4rem;top:0%}
     .menu span{padding: 1.5rem 1rem;position:relative;display:flex;justify-content: flex-start;align-items: flex-start;left: 0%;}
-    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
-   .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
-   .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;}
+    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 21.5rem;background-color: black;} 
+   .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 13.5rem; background-color: black;}
+   .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 13.5rem;background-color: black;}
    .Profile_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-right: 11rem;background-color: black;}
    .search_product{padding: 4px;display: flex;align-items: center;justify-content: center;display: none;}
    .right_side{display: flex;justify-content:flex-end;align-items:flex-end;background-color: black;width: 100%;top:0rem}

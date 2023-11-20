@@ -71,3 +71,4 @@ $route['delete']="EA_C/Login_C/delete";
 $route['Buy_Now']="E_C/Login_C/Buy_Now";
 $route['aboutus']="E_C/Login_C/about_us";
 $route['sellar']="E_C/Login_C/sellar";
+$route['buy_all']="E_C/Login_C/buy_all";

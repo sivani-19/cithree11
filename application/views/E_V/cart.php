@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product_display</title>
+    <title>Cart</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
                     <th>remove</th>
                 </tr>
             <tr>
-                <?php $total_amount = 0;?>        
+        <?php $total_amount = 0;?>        
         <?php foreach($data as $row):?>
             <div class="product_box">
             <div class="child_product product_name">
@@ -79,37 +79,6 @@
     setTimeout(function() {
             document.getElementById('flash-message').style.display = 'none';
         }, 1000); // 2000 milliseconds (2 seconds)
-var quantity_dec_buttons = document.querySelectorAll('.quantity_dec');
-var quantity_inc_buttons = document.querySelectorAll('.qunatity_inc');
-var total_quantity_elements = document.querySelectorAll('.total_quantity');
-
-// Add event listeners to decrease quantity
-for (var i = 0; i < quantity_dec_buttons.length; i++) {
-    quantity_dec_buttons[i].addEventListener("click", function () {
-        var index = Array.from(quantity_dec_buttons).indexOf(this);
-        decreaseQuantity(total_quantity_elements[index]);
-    });
-}
-
-// Add event listeners to increase quantity
-for (var i = 0; i < quantity_inc_buttons.length; i++) {
-    quantity_inc_buttons[i].addEventListener("click", function () {
-        var index = Array.from(quantity_inc_buttons).indexOf(this);
-        increaseQuantity(total_quantity_elements[index]);
-    });
-}
-
-function decreaseQuantity(element) {
-    var currentQuantity = parseInt(element.textContent, 10);
-    if (currentQuantity > 1) {
-        element.textContent = currentQuantity - 1;
-    }
-}
-
-function increaseQuantity(element) {
-    var currentQuantity = parseInt(element.textContent, 10);
-    element.textContent = currentQuantity + 1;
-}
 
 
 </script>

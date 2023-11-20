@@ -10,7 +10,7 @@
 <?php echo form_open('about_us');?>
     <form action="<?php echo base_url('about_us');?>" method="post">
     <div class="aboutus">
-       <img src="https://cdn.pixabay.com/photo/2017/08/07/19/45/ecommerce-2607114_1280.jpg" style="width:40%;height:20%;object-fit:contain;">
+       <img src="https://cdn.pixabay.com/photo/2017/08/07/19/45/ecommerce-2607114_1280.jpg">
        <p class="text">Toogl promotes their core value of remote working throughout their website and
          their About Us page is a great example of how you can promote your core values too.
           As a core value to their business, their About Us page is focused around this global 
@@ -31,10 +31,31 @@
         margin: auto;
         margin-top:2rem ;
     }
+    .aboutus img{
+        width:40%;
+        height:20%;
+        object-fit:contain;"
+    }
     .text{
         width: 70%;
         margin: auto;
         font-size: 1.4rem;
+    }
+    @media screen and (max-width:478px){ 
+        .aboutus{
+        margin: auto;
+        margin:1rem ;
+    }
+    .text{
+        width: 100%;
+        margin: auto;
+        font-size: 1.4rem;
+    }
+    .aboutus img{
+        width:80%;
+        height:20%;
+        object-fit:contain;"
+    }
     }
 </style>
   
