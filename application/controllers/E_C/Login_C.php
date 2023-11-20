@@ -106,6 +106,7 @@ public function product_dashboard(){
         );
         $data['User_id']=$this->session->userdata('userid');
        $result= $this->E_M->cart($data);
+     
     }
 
    }

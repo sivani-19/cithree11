@@ -7,19 +7,7 @@
     <title>product_display</title>
 </head>
 <body>
-    <?php if($this->session->flashdata('alert')):?>
-           <div class="flash_data" id="flash_data"></div>
-        <script>
-        Swal.fire({
-            icon: 'info',
-            title: 'Product is already in the cart',
-            showConfirmButton: false,
-            timer: 1000, // Automatically close after 2 seconds
-          
 
-        });
-    </script>
-<?php endif;?>
 <?php echo form_open('product_dashboard');?>
     <form action="<?php echo base_url('product_dashboard');?>" method="post">
     <div class="dashboard">

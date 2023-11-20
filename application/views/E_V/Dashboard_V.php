@@ -90,10 +90,11 @@
     .login{display: none;}
     body{padding: 0%;margin: 0%;} 
     span{display: flex;width: 100%;}
+    .Products i{display: flex;justify-content: flex-end;align-items:end;position: relative;margin-top: 0.1rem;margin-left: 1rem;}
     .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;}
-    .menu{display:none;flex-direction: column;justify-content: flex-start;align-items: flex-start;height:100%;position:fixed;background-color: black;left:0%;z-index:2;top: 0%;padding-top: 4rem;}
-    .menu span{position:relative;display:flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding: 2rem 2rem;}
-    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
+    .menu{display:none;flex-direction: column;justify-content: flex-start;align-items: flex-start;height:100%;position:fixed;background-color: black;left:0%;z-index:2;padding-top: 4rem;top:0%}
+    .menu span{padding: 1.5rem 1rem;position:relative;display:flex;justify-content: flex-start;align-items: flex-start;left: 0%;}
+    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 21.5rem;background-color: black;} 
    .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
    .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;}
    .Profile_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-right: 11rem;background-color: black;}
@@ -112,10 +113,11 @@
     .login{display: none;}
     body{padding: 0%;margin: 0%;} 
     span{display: flex;width: 100%;}
+    .Products i{display: flex;justify-content: flex-end;align-items:end;position: relative;margin-top: 0.1rem;margin-left: 1rem;}
     .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;}
     .menu{display:none;flex-direction: column;justify-content: flex-start;align-items: flex-start;height:100%;position:fixed;background-color: black;left:0%;z-index:2;padding-top: 4rem;top:0%}
     .menu span{padding: 1.5rem 1rem;position:relative;display:flex;justify-content: flex-start;align-items: flex-start;left: 0%;}
-    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
+    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 21.5rem;background-color: black;} 
    .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
    .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;}
    .Profile_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-right: 11rem;background-color: black;}
