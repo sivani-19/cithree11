@@ -79,7 +79,7 @@
 </style>
    <script>
     setTimeout(function() {
-            document.getElementById('flash-message').style.display = 'none';
+            document.getElementById('flash-message').style.display = "none";
         }, 1000); // 2000 milliseconds (2 seconds)
 
     </script>

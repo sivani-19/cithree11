@@ -171,13 +171,15 @@ document.addEventListener("click",function(){
    const products_ul_i=document.querySelector(".fa-caret-down");
     if(products.contains(event.target)||products_ul.contains(event.target)||products_ul_i.contains(event.target))
     {
-
+       
     }
     else
     {
         products_ul.style.display="none";  
-        products_ul_i1.style.transform = 'rotate(0deg)'; 
+        products_ul_i.style.transform = 'rotate(0deg)'
+      
     } 
+
 });
 const profile = document.querySelector(".Profile");
     const profileUl = document.querySelector(".Profile_ul");
@@ -199,16 +201,14 @@ document.addEventListener("click",function(){
     const profile = document.querySelector(".Profile");
     const profileUl = document.querySelector(".Profile_ul");
     const products_ul_i1=document.querySelector(".down1");
-    if(profile.contains(event.target)||profileUl.contains(event.target))
+    if(profile.contains(event.target)||profileUl.contains(event.target)||products_ul_i.contains(event.target))
     {
 
     }
     else{
         profileUl.style.display="none";
-        if(profileUl.style.display=="none")
-        {
-            products_ul_i1.style.transform = 'rotate(0deg)'; 
-        }
+        console.log("hi");
+        products_ul_i1.style.transform = 'rotate(0deg)'; 
       
     } 
 });
@@ -240,5 +240,14 @@ document.addEventListener("click", function(event) {
 }
 });
 
+let previouspage=window.pageYOffset;
+window.onscroll=function(){
+    let currentpage=window.pageYOffset;
+    if(previouspage<currentpage )
+    {
+    menu.style.display="none";
+    }
+    previouspage=currentpage;
+}
 </script>
 </html>
