@@ -7,7 +7,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login</title>
 </head>
-<body >
+<body>
 <div class="centered-text">
     <div class="Login_V">
        <?php echo form_open('E_C/Login_C/viewcart');?>
@@ -17,18 +17,14 @@
 </div>
 </body>
 <style>
-
 .emptycart
 {
-    margin:0;
-    padding: 0;
     position:relative;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
+    height:80vh;
 }
+
 </style>
