@@ -27,6 +27,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
 }
 </style>
