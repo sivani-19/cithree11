@@ -6,9 +6,6 @@
     <title>product_display</title>
 </head>
 <body>
-    <?php if($this->session->flashdata('alert')):?>
-        <?php echo $this->session->flashdata('alert');?>
-<?php endif;?>
 <?php echo form_open('product_dashboard');?>
     <form action="<?php echo base_url('product_dashboard');?>" method="post">
     <div class="dashboard">
