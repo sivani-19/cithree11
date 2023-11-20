@@ -22,7 +22,7 @@
     <ul class="products_ul">
    <li class="Products_li"><a href="<?php echo base_url('search?tag='.'laptop');?>">Laptop</a></li><br>
    <li class="Products_li"><a href="<?php echo base_url('search?tag='.'phone');?>">cellphone</a></li><br>
-   <li class="Products_li"><a href="<?php echo base_url('search?tag='.'earphone');?>">earphones</a></li><br>
+   <li class="Products_li"><a href="<?php echo base_url('search?tag='.'earpods');?>">earphones</a></li><br>
 </ul>
     </div>
     <div class="mb-3">
