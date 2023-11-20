@@ -31,7 +31,7 @@
                 </div></td>
             <td><div class="child_product amount "><?php echo $row->Amount;$total_amount+=$row->Amount;?></div></td>
                <td><div class="total_quantity" name="total_quantity"><?php echo $row->quantity;?></div></td>
-                        <th> <div class="child_product remove "><a href="<?php echo base_url('E_C/Login_C/remove_from_cart?id='. $id);?>">remove</a></div></th>
+                        <th><div class="child_product remove "><a href="<?php echo base_url('E_C/Login_C/remove_from_cart?id='. $id);?>">remove</a></div></th>
                 </tr>
             <?php endforeach;?>  
             <table class="Total">
