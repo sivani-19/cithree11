@@ -238,8 +238,6 @@ document.addEventListener("click", function(event) {
     menu.style.display="none";
     }
 }
-});
-
 let previouspage=window.pageYOffset;
 window.onscroll=function(){
     let currentpage=window.pageYOffset;
@@ -249,5 +247,8 @@ window.onscroll=function(){
     }
     previouspage=currentpage;
 }
+});
+
+
 </script>
 </html>
