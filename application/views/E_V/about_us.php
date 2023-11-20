@@ -54,7 +54,23 @@
     .aboutus img{
         width:80%;
         height:20%;
-        object-fit:contain;"
+        object-fit:contain;
+    }
+    }
+    @media screen and (max-width:768px){ 
+        .aboutus{
+        margin: auto;
+        margin:1rem ;
+    }
+    .text{
+        width: 100%;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .aboutus img{
+        width:80%;
+        height:20%;
+        object-fit:contain;
     }
     }
 </style>

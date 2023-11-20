@@ -56,7 +56,28 @@ i{position: absolute; right:10px;top:40%;cursor: pointer;}
 .dropdown-divider a{position:relative;padding: 10px 0px;}
 .error_message{ position:absolute; text-align: left;   color:red;left:0%;top:70%;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;top: 80%;}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    /* Your CSS rules for smaller screens go here */
+body{position:relative;}
+.centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 1rem;
+    position: absolute;}
+label{position: absolute;left:0%;font-size: 1.3rem;}
+.Login_V div{position:relative;margin-top:1rem;}
+button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;
+    padding: 10px;font-size: 1rem;}
+.login{font-size: 2rem;}
+.fa-eye{display: none;}
+input{padding:0.8rem 0.5rem;width:80vw;position: relative;margin-top:1rem;border-radius: 5px;border:none;}
+input:focus{outline: none;}
+.dropdown-divider { position: relative;padding: 10px 0px;}
+.mb-3 a{position: absolute;right: 0%;top:70%;}
+i{position: absolute; right:10px;top:40%;cursor: pointer;}
+.dropdown-divider a{position:relative;padding: 10px 0px;}
+.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:70%;}
+.login_failed{position:absolute;text-align: left;left:0%;color:red;top:80%;}
+    
+}
+@media only screen and (max-device-width: 1024px) and (min-device-width:768px) {
     /* Your CSS rules for smaller screens go here */
 body{position:relative;}
 .centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 1rem;
