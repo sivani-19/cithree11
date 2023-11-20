@@ -44,6 +44,9 @@ public function view_cart($userid){
     {
         return $query->result();
     }
+    else{
+        return false;
+    }
 }
 public function remove($id)
 {
@@ -84,6 +87,14 @@ public function Buy_now($id)
     $query=$this->db->get_where('prod',array('id'=>$id));
     return $query->result();
 }
+
+
+public function getdetails($id,$db)
+{
+    $query=$this->db->get_where($name,array('id'=>$id));
+    return $query->result();
+}
+
 public function buy_all($userid){
     $this->db->where('User_id', $userid);
     $query=$this->db->delete('cart');

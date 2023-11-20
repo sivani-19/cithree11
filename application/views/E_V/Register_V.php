@@ -44,7 +44,7 @@
       <input type="password" class="form-control" id="FormPassword1" placeholder="Conform-Password" name="conform-password">
     <span class="error_message"><?php echo form_error('conform-password')?></span>
     </div>
-    <button type="submit" class="btn btn-primary" name="update">Sign Up</button>
+    <button type="submit" class="btn btn-primary" name="update"><a href="<?php echo base_url('E_C/Login_C/login');?>" style="color:white;text-decoration:none;">Sign Up</a></button>
   <div class="dropdown-divider"></div>
   <a class="dropdown-item" href="<?php echo base_url('E_C/Login_C/login');?>">Already have an account?Login</a><br>
 </div>  

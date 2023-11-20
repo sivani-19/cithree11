@@ -11,13 +11,13 @@
     <form action="<?php echo base_url('E_C/Login_C/search');?>" method="post">
     <?php $id= $this->session->userdata('userid');?>
     <nav class="navbar">
-    <div class="login">logo</div>
+    <span class="login"><a href="product_dashboard">logo</a></span>
     <div class="menu">
     <div class="mb-3">
      <span class="home">
         <a href="product_dashboard">Home</a></span>    
     </div>
-    <div class="mb-3">
+    <div class="mb-3" >
     <span class="Products">Products <i class="fa-solid fa-caret-down"></i></span> 
     <ul class="products_ul">
    <li class="Products_li"><a href="<?php echo base_url('E_C/Login_C/search?tag='.'laptop');?>">Laptop</a></li><br>
@@ -26,10 +26,10 @@
 </ul>
     </div>
     <div class="mb-3">
-    <span class="Services">Become Sellar</span>  
+    <span class="Services"><a href="sellar">Become Sellar</a></span>  
     </div>
     <div class="mb-3">
-    <span class="about_us">About us</span>  
+    <span class="about_us"><a href="aboutus">About us</a></span>  
     </div>
     </div>
     <div class="right_side">
@@ -69,6 +69,7 @@
     body{padding: 0%;margin: 0%;}
     .navbar{display: flex;align-items: center;background-color: black;color: white;font-size:1.4rem;align-items: center;padding: 2rem 2rem;position: relative;}
     .menu{display: flex;position: relative;}
+
     .menu div{display: flex;justify-content: center;align-items:center;padding: 0 20px;cursor: pointer;margin: 0rem 1rem;position: relative;}
    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */padding: 20px;top: 0%;background-color: black;} 
    .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */padding: 20px;top: 0%;background-color: black;  }
@@ -86,14 +87,16 @@
   .notification span {margin:0px 2px;}
   .menu_search_product{display: none;}
   .mb-3P{cursor: pointer;}
- a{text-decoration: none;color: white;}
+  a{text-decoration: none;color: white;}
  .search_i button{padding: 0.7rem;margin: -0.19rem;}
-  @media screen and (max-width:768px)
+
+  @media only screen and (min-device-width:478px) and (max-device-width:768px)
     {
     .login{display: none;}
     body{padding: 0%;margin: 0%;} 
+    span{display: flex;width: 100%;}
     .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;}
-    .menu{display:none;flex-direction: column;justify-content: flex-start;align-items: flex-start;height:100%;position:fixed;background-color: black;left:0%;z-index:2;}
+    .menu{display:none;flex-direction: column;justify-content: flex-start;align-items: flex-start;height:100%;position:fixed;background-color: black;left:0%;z-index:2;top: 0%;padding-top: 4rem;}
     .menu span{position:relative;display:flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding: 2rem 2rem;}
     .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
    .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
@@ -107,9 +110,45 @@
    .menu_search_product{display: block;top:2rem;position: relative;margin:auto;}
    .menu_search_product {display: flex;justify-content: center;align-items: center;position: relative;}
    .menu_search_product input{position: relative;left:0%;height:2rem;width: 17rem;padding-right: 2rem;margin: auto;font-size: 1.8rem;}
-   .search_m{padding-right:2px ;margin-top: 2px;position: absolute;right: 2%;padding-top: 0.3rem;color: black;}
    #m_h{display: none;}
    }  
+   @media only screen 
+  and (min-device-width: 769px) 
+  and (max-device-width: 1024px) 
+  {
+    .login{display: none;}
+    body{padding: 0%;margin: 0%;} 
+    span{display: flex;width: 100%;}
+    .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;}
+    .menu{display:none;flex-direction: column;justify-content: flex-start;align-items: flex-start;height:100%;position:fixed;background-color: black;left:0%;z-index:2;padding-top: 4rem;top:0%}
+    .menu span{position:relative;display:flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding: 2rem 2rem;}
+    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
+   .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
+   .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;}
+   .Profile_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-right: 11rem;background-color: black;}
+   .search_product{display: flex;justify-content:flex-start;align-items:flex-start;position: relative;width:auto;background-color: black;margin:0 auto;top:0.5rem;}
+   .right_side{display: flex;justify-content:flex-end;align-items:flex-end;background-color: black;width: 100%;top:0rem}
+   .menu-bar i{display:flex;align-items: center;justify-content: center;position:absolute;left:0rem;cursor: pointer;color:white;}
+  }
+@media only screen and (max-device-width:478px)
+{
+    .login{display: none;}
+    body{padding: 0%;margin: 0%;} 
+    span{display: flex;width: 100%;}
+    .Products{}
+    .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;position: relative;}
+    .menu{display:none;flex-direction: column;height:100%;position:fixed;background-color: black;left:0%;z-index:2;padding-top: 4rem;top:0%}
+    .menu span{position:relative;display:flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding: 2rem 2rem;}
+    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
+   .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
+   .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;}
+   .Profile_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-right: 11rem;background-color: black;}
+   .search_product{padding: 4px;display: flex;align-items: center;justify-content: center;display: none;}
+   .right_side{display: flex;justify-content:flex-end;align-items:flex-end;background-color: black;width: 100%;top:0rem}
+   .menu-bar i{display:flex;align-items: center;justify-content: center;position:absolute;left:0rem;cursor: pointer;color:white;}
+    .right_side{display: flex;justify-content:flex-end;align-items:flex-end;background-color: black;width: 100%;top:1.3rem} 
+    #m_h{display: none;}
+}
 </style>
 <script>  
 const products = document.querySelector(".Products");
@@ -154,7 +193,7 @@ const profile = document.querySelector(".Profile");
     {
     profileUl.style.display="none";
     products_ul_i1.style.transform = 'rotate(0deg)'; 
-    
+
     }
 });
 document.addEventListener("click",function(){
@@ -170,7 +209,6 @@ document.addEventListener("click",function(){
         if(profileUl.style.display=="none")
         {
             products_ul_i1.style.transform = 'rotate(0deg)'; 
-       console.log('hado');
         }
       
     } 
@@ -188,5 +226,20 @@ const menu_bar = document.querySelector(".menu-bar");
     menu.style.display="none";
     }
 });
+
+document.addEventListener("click", function(event) {
+    if (window.matchMedia(" (max-width: 1024px)").matches) {
+
+    if(menu_bar.contains(event.target)||menu.contains(event.target))
+    {
+
+    }
+    else
+    {
+    menu.style.display="none";
+    }
+}
+});
+
 </script>
 </html>

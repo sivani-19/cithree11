@@ -8,7 +8,7 @@ class Login_C extends CI_Controller{
 public function login(){
  
    $this->form_validation->set_rules('email','email','required');
-   $this->form_validation->set_rules('password','password','required|max_length[12]|min_length[3]');
+   $this->form_validation->set_rules('password','password','required');
    if($this->form_validation->run()==false){
     $this->load->view('E_V/login_V');
    }
@@ -46,11 +46,11 @@ else
 }
 public function register(){
 
-    $this->form_validation->set_rules('FirstName','First Name','required|max_length[12]|min_length[3]');
-    $this->form_validation->set_rules('lastName','last Name','required|max_length[12]|min_length[3]');
-    $this->form_validation->set_rules('email','email-id','required|is_unique[ecom.email]');
-    $this->form_validation->set_rules('password','password','required|max_length[12]|min_length[3]');
-    $this->form_validation->set_rules('conform-password','conform-password','required|max_length[12]|min_length[3]|matches[password]');
+    $this->form_validation->set_rules('FirstName','First Name','required');
+    $this->form_validation->set_rules('lastName','last Name','required');
+    $this->form_validation->set_rules('email','email-id','required|is_unique[ecom1.email]');
+    $this->form_validation->set_rules('password','password','required');
+    $this->form_validation->set_rules('conform-password','conform-password','required|matches[password]');
     if($this->form_validation->run()==false){
         $this->load->view('E_V/Register_V');
     }
@@ -58,19 +58,20 @@ public function register(){
         $data=array(
          'FirstName'=>$this->input->post('FirstName'),
          'lastName'=>$this->input->post('lastName'),
+         'Username'=>$this->input->post('Username'),
          'email'=>$this->input->post('email'),
          'password'=>$this->input->post('password'),
         );
         $result=$this->E_M->register($data);
         if($result==true)
         {
-            $this->load->view('E_V/Register_V');
+            $this->load->view('E_V/Login_V');
         }
     }
 }
 public function forgetpassword(){
     $this->form_validation->set_rules('email','email','required');
-    $this->form_validation->set_rules('password','password','required|max_length[12]|min_length[3]');
+    $this->form_validation->set_rules('password','password','required');
    $this->form_validation->set_rules('conform-password','conform-password','required|matches[password]');
     if($this->form_validation->run()==false){
         $this->load->view('E_V/fp_V');
@@ -114,6 +115,11 @@ public function product_dashboard(){
     $this->load->view('E_V/Dashboard_V');
     $userid=$this->session->userdata('userid');
     $result['data']=$this->E_M->view_cart($userid);
+    if($result['data']==false)
+    {
+        $this->load->view('E_V/Emptycart');
+    }
+    else{
    $this->load->view('E_V/cart',$result);
    if(!empty($this->input->get('id')))
    {
@@ -123,7 +129,7 @@ public function product_dashboard(){
    $data=array('id'=>$id,'quantity'=>$quantity);
    $result=$this->E_M->update_qunatity($data);
    }
-}
+}}
    public function remove_from_cart(){
     $this->load->view('E_V/Dashboard_V');
     $id=$this->input->get('id');
@@ -202,11 +208,16 @@ public function Orders(){
 public function buy_all(){
     $this->load->view('E_V/Dashboard_V');
     $userid=$this->session->userdata('userid');
-    $result['data']=$this->E_M->buy_all($userid);
-    $this->load->view('E_V/Buy_Now',$result);
-}
-
+    $result=$this->E_M->buy_all($userid);
+    $this->load->view('E_V/suc_pur');
 } 
-
-
+public function about_us(){
+    $this->load->view('E_V/Dashboard_V');
+    $this->load->view('E_V/about_us');
+}
+public function sellar(){
+    $this->load->view('E_V/Dashboard_V');
+    $this->load->view('E_V/Become_sellar');
+}
+}
 ?>

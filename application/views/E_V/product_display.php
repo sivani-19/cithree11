@@ -75,11 +75,7 @@
         background-color: black;
     
     }
-    
-   
 </style>
    <script>
-  
- 
     </script>
 </html>

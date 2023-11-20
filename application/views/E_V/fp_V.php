@@ -34,7 +34,7 @@
 </body>
 <style>
 body{position:relative;display: flex;text-align: center;justify-content: center;   align-items: center;
-    height: 100vh; /* Adjust the height as needed */}
+    height: 95vh; /* Adjust the height as needed */}
 .centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 5rem;
     position: absolute;text-align: center; }
 label{position: absolute;left:0%;font-size: 1.3rem;}

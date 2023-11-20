@@ -69,3 +69,5 @@ $route['search']='E_C/Login_C/search';
 $route['profile_update']='E_C/Login_C/update_profile';
 $route['delete']="EA_C/Login_C/delete";
 $route['Buy_Now']="E_C/Login_C/Buy_Now";
+$route['aboutus']="E_C/Login_C/about_us";
+$route['sellar']="E_C/Login_C/sellar";
