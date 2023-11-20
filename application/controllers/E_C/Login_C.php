@@ -97,8 +97,6 @@ public function product_dashboard(){
     if(!empty($this->input->get('id'))){
         $id=$this->input->get('id');
     $result=$this->E_M->add_cart($id);
-    if($result!=NUll)
-    {
         $row=$result->row();
         $data=array(
             'prod_id'=>$row->id,
@@ -109,7 +107,7 @@ public function product_dashboard(){
         $data['User_id']=$this->session->userdata('userid');
        $result= $this->E_M->cart($data);
     }
-}
+
    }
    public function cart(){
     $this->load->view('E_V/Dashboard_V');
@@ -125,8 +123,7 @@ public function product_dashboard(){
    {
     $this->load->view('E_V/Dashboard_V');
    $id=$this->input->get('id');
-   $quantity=$this->input->post('quantity');
-   $data=array('id'=>$id,'quantity'=>$quantity);
+   $data=array('id'=>$id);
    $result=$this->E_M->update_qunatity($data);
    }
 }}
@@ -181,13 +178,6 @@ public function update_profile(){
     }
     }
     // In your controller (E_C/Login_C)
-public function update_quantity() {
-    $itemId = $this->input->post('itemId');
-    $newQuantity = $this->input->post('newQuantity');
-    $this->db->where('id', $itemId);
-    $this->db->update('your_table', ['quantity' => $newQuantity]);
-    echo "Quantity updated successfully";
-}
 public function Buy_Now(){
     $this->load->view('E_V/Dashboard_V');
     $id=$this->input->get('id');

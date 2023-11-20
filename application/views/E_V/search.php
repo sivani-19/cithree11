@@ -6,9 +6,7 @@
     <title>product_display</title>
 </head>
 <body>
-    <?php if($this->session->flashdata('alert')):?>
-        <?php echo $this->session->flashdata('alert');?>
-<?php endif;?>
+ 
 <?php echo form_open('search');?>
     <form action="<?php echo base_url('search');?>" method="post">
     <div class="dashboard">
@@ -78,9 +76,7 @@
     
 </style>
    <script>
-    setTimeout(function() {
-            document.getElementById('flash-message').style.display = "none";
-        }, 1000); // 2000 milliseconds (2 seconds)
+
 
     </script>
 </html>
