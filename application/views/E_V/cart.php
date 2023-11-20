@@ -45,7 +45,7 @@
 </body>
 <style> 
      table {width:fit-content;border-collapse: collapse;text-align: center;}
-    .dashboard table, th, td {border: 1px solid black;padding: 1rem;}
+   .dashboard table, th, td {border: 1px solid black;padding: 1rem;}
    .dashboard{display: flex;justify-content: center;align-items: center;height: 80vh;position: relative;}
    .remove a{color: blue;}
   .Image img{width:9rem;height:8rem;object-fit:contain;}
