@@ -19,7 +19,7 @@
  
 </body>
 <style> 
-   .Sellar{position:relative;display: flex;text-align: center;justify-content: center;   align-items: center;
+   .Sellar{display: flex;text-align: center;justify-content: center;   align-items: center;
     height: 80vh; /* Adjust the height as needed */}
 .number{background-color: black;color: white;padding: 0.7rem;border: none;margin-top: 0.4rem;}
 @media screen and (max-width:478px)

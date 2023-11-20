@@ -32,7 +32,7 @@
                     <a href="<?php  echo base_url('product_dashboard?id='.$id)?>">Add Cart</button></a>
                 </div></div>
                 <div class="child_product Buy_Now" name="Buy_now">
-                <button type="submit" name="Buy_Now"> Buy Now</button>
+                <button type="submit" name="Buy_Now"><a href="<?php  echo base_url('Buy_Now?id='.$id)?>"> Buy Now</a></button>
             </div>
             </div>
             <?php endforeach;?>

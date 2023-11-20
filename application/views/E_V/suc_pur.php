@@ -21,7 +21,7 @@
 </div>
 </body>
 <style>
-.success{position:relative;display: flex;text-align: center;justify-content: center;   align-items: center;
+.success{display: flex;text-align: center;justify-content: center;   align-items: center;
     height: 80vh; /* Adjust the height as needed */}
 .back{background-color: black;color: white;padding: 0.7rem;border: none;margin-top: 0.4rem;}
 @media only screen and (max-device-width:478px)
