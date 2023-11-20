@@ -51,14 +51,10 @@ public function view_cart($userid){
 public function remove($id)
 {
     $this->db->where('id', $id);
-    $query=$this->db->delete('cart');
-    if($query->num_rows>0)
-    {
-       return true;
-    }
-    else{
-      return false;
-    }
+    $this->db->delete('cart');
+    $this->db->query('SET @new_id=0;');
+    $this->db->query('UPDATE cart SET id = @new_id:=@new_id+1;');
+    return true;
 }
 public function update_qunatity($data)
 {

@@ -45,8 +45,8 @@
 </body>
 <style> 
      table {width:fit-content;border-collapse: collapse;text-align: center;}
-   .dashboard table, th, td {border: 1px solid black;padding: 1rem;}
-   .dashboard{display: flex;justify-content: center;align-items: center;height: 80vh;position: relative;}
+   .dashboard table, th, td {border: 1px solid black;padding: 2rem;}
+   .dashboard{display: flex;justify-content: center;align-items: center;margin:2rem;}
    .remove a{color: blue;}
   .Image img{width:9rem;height:8rem;object-fit:contain;}
    .Buy_Now{display: flex;justify-content: end;align-items: end;}
@@ -76,8 +76,6 @@
   }
 </style>
    <script> 
-    setTimeout(function() {
-            document.getElementById('flash-message').style.display = 'none';
-        }, 1000); // 2000 milliseconds (2 seconds)
+   
 </script>
 </html>

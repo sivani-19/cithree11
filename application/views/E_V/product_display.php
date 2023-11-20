@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php if($this->session->flashdata('alert')):?>
-        <div class="flash-message" id="flash-message"><?php echo $this->session->flashdata('alert');?></div>
+        <div class="flash-message" id="flash-message"></div>
 <?php endif;?>
 <?php echo form_open('product_dashboard');?>
     <form action="<?php echo base_url('product_dashboard');?>" method="post">
@@ -77,9 +77,7 @@
     }
 </style>
    <script>
-     setTimeout(function() {
-            document.getElementById('flash-message').style.display = "none";
-        }, 1000); // 2000 milliseconds (2 seconds)
+     
 
     </script>
 </html>
