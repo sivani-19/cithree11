@@ -24,4 +24,40 @@
 .success{position:relative;display: flex;text-align: center;justify-content: center;   align-items: center;
     height: 80vh; /* Adjust the height as needed */}
 .back{background-color: black;color: white;padding: 0.7rem;border: none;margin-top: 0.4rem;}
+@media only screen and (max-device-width:478px)
+{
+    .success span {
+                flex-direction: column; /* Change to column direction */
+               font-size: 1.6rem;
+            }
+
+            .back {
+                margin-top: 1rem; /* Add some margin for spacing */
+                width: 50%;margin: auto;font-size: 1.6rem;margin-top: 1rem;
+            }
+}
+@media only screen and (min-device-width:478px) and (max-device-width:768px)
+{
+    .success span {
+                flex-direction: column; /* Change to column direction */
+               font-size: 1.6rem;
+            }
+
+            .back {
+                margin-top: 1rem; /* Add some margin for spacing */
+                width: 50%;margin: auto;font-size: 1.6rem;margin-top: 1rem;
+            }
+}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px)
+{
+    .success span {
+                flex-direction: column; /* Change to column direction */
+               font-size: 2rem;
+            }
+
+            .back {
+                margin-top: 1rem; /* Add some margin for spacing */
+                width: 30%;margin: auto;font-size: 2.4rem;margin-top: 1rem;
+            }
+}
 </style>

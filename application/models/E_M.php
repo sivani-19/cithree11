@@ -89,12 +89,6 @@ public function Buy_now($id)
 }
 
 
-public function getdetails($id,$db)
-{
-    $query=$this->db->get_where($name,array('id'=>$id));
-    return $query->result();
-}
-
 public function buy_all($userid){
     $this->db->where('User_id', $userid);
     $query=$this->db->delete('cart');

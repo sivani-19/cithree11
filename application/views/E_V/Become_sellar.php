@@ -46,6 +46,18 @@
                 width: 50%;margin: auto;font-size: 1.6rem;margin-top: 1rem;
             }
 }
+@media only screen and (min-device-width:768px) and (max-device-width:1024px)
+{
+    .Sellar span {
+                flex-direction: column; /* Change to column direction */
+               font-size: 2rem;
+            }
+
+            .number {
+                margin-top: 1rem; /* Add some margin for spacing */
+                width: 30%;margin: auto;font-size: 2.4rem;margin-top: 1rem;
+            }
+}
 </style>
   
 </html>

@@ -17,7 +17,7 @@
      <span class="home">
         <a href="product_dashboard">Home</a></span>    
     </div>
-    <div class="mb-3" >
+    <div class="mb-3">
     <span class="Products">Products <i class="fa-solid fa-caret-down"></i></span> 
     <ul class="products_ul">
    <li class="Products_li"><a href="<?php echo base_url('E_C/Login_C/search?tag='.'laptop');?>">Laptop</a></li><br>
@@ -69,7 +69,6 @@
     body{padding: 0%;margin: 0%;}
     .navbar{display: flex;align-items: center;background-color: black;color: white;font-size:1.4rem;align-items: center;padding: 2rem 2rem;position: relative;}
     .menu{display: flex;position: relative;}
-
     .menu div{display: flex;justify-content: center;align-items:center;padding: 0 20px;cursor: pointer;margin: 0rem 1rem;position: relative;}
    .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */padding: 20px;top: 0%;background-color: black;} 
    .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */padding: 20px;top: 0%;background-color: black;  }
@@ -89,7 +88,6 @@
   .mb-3P{cursor: pointer;}
   a{text-decoration: none;color: white;}
  .search_i button{padding: 0.7rem;margin: -0.19rem;}
-
   @media only screen and (min-device-width:478px) and (max-device-width:768px)
     {
     .login{display: none;}
@@ -112,16 +110,14 @@
    .menu_search_product input{position: relative;left:0%;height:2rem;width: 17rem;padding-right: 2rem;margin: auto;font-size: 1.8rem;}
    #m_h{display: none;}
    }  
-   @media only screen 
-  and (min-device-width: 769px) 
-  and (max-device-width: 1024px) 
+   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) 
   {
     .login{display: none;}
     body{padding: 0%;margin: 0%;} 
     span{display: flex;width: 100%;}
     .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;}
     .menu{display:none;flex-direction: column;justify-content: flex-start;align-items: flex-start;height:100%;position:fixed;background-color: black;left:0%;z-index:2;padding-top: 4rem;top:0%}
-    .menu span{position:relative;display:flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding: 2rem 2rem;}
+    .menu span{padding: 1.5rem 1rem;position:relative;display:flex;justify-content: flex-start;align-items: flex-start;left: 0%;}
     .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
    .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
    .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;}
@@ -129,16 +125,18 @@
    .search_product{display: flex;justify-content:flex-start;align-items:flex-start;position: relative;width:auto;background-color: black;margin:0 auto;top:0.5rem;}
    .right_side{display: flex;justify-content:flex-end;align-items:flex-end;background-color: black;width: 100%;top:0rem}
    .menu-bar i{display:flex;align-items: center;justify-content: center;position:absolute;left:0rem;cursor: pointer;color:white;}
-  }
-@media only screen and (max-device-width:478px)
+   #m_h{display: none;}  
+}
+@media screen and (max-device-width:478px)
 {
     .login{display: none;}
     body{padding: 0%;margin: 0%;} 
-    span{display: flex;width: 100%;}
-    .Products{}
+    .mb-3 span{display: flex;width: 100%;}
+    .Products{display: flex;align-items: flex-start;justify-content:flex-start;position: relative;}
+    .Products i{display: flex;justify-content: flex-end;align-items:end;position: relative;margin-top: 0.1rem;margin-left: 1rem;}
     .navbar{display: flex;align-items: flex-start;justify-content:flex-start;background-color: black;color: white;font-size:1.4rem;padding:2rem auto;position: relative;}
     .menu{display:none;flex-direction: column;height:100%;position:fixed;background-color: black;left:0%;z-index:2;padding-top: 4rem;top:0%}
-    .menu span{position:relative;display:flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;padding: 2rem 2rem;}
+    .menu span{padding: 1.5rem 1rem;position:relative;display:flex;justify-content: flex-start;align-items: flex-start;left: 0%;}
     .products_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;} 
    .Services_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem; background-color: black;}
    .about_us_ul{display: none;list-style-type: none;position: absolute; /* Make the list absolute to position it */margin-top:3% ;margin-left: 12.5rem;background-color: black;}
@@ -148,6 +146,7 @@
    .menu-bar i{display:flex;align-items: center;justify-content: center;position:absolute;left:0rem;cursor: pointer;color:white;}
     .right_side{display: flex;justify-content:flex-end;align-items:flex-end;background-color: black;width: 100%;top:1.3rem} 
     #m_h{display: none;}
+
 }
 </style>
 <script>  

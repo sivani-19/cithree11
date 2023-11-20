@@ -166,7 +166,6 @@ public function update_profile(){
     if(isset($_POST['update']))
     {
         $data=array(
-         
         'FirstName'=>$this->input->post('FirstName'),
         'LastName'=>$this->input->post('lastName'),
         'email'=>$this->input->post('email'),
@@ -190,7 +189,6 @@ public function update_quantity() {
     // Replace 'your_table' and 'id' with your actual table and column names
     $this->db->where('id', $itemId);
     $this->db->update('your_table', ['quantity' => $newQuantity]);
-
     echo "Quantity updated successfully";
 }
 public function Buy_Now(){
