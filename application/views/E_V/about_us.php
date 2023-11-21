@@ -34,7 +34,7 @@
     .aboutus img{
         width:40%;
         height:20%;
-        object-fit:contain;"
+        object-fit:contain;
     }
     .text{
         width: 70%;

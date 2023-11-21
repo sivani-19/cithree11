@@ -8,7 +8,7 @@
     <title>Register</title>
 </head>
 <body>
-  <form action="<?php echo base_url('E_C/Login_C/register')?>" method="post">
+  <form action="<?php echo base_url('register')?>" method="post">
 <div class="centered-text">
   <div class="Login_V">
     <h4 class="login">Register</h4>
@@ -44,17 +44,18 @@
       <input type="password" class="form-control" id="FormPassword1" placeholder="Conform-Password" name="conform-password">
     <span class="error_message"><?php echo form_error('conform-password')?></span>
     </div>
-    <button type="submit" class="btn btn-primary" name="update"><a href="<?php echo base_url('E_C/Login_C/login');?>" style="color:white;text-decoration:none;">Sign Up</a></button>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="<?php echo base_url('E_C/Login_C/login');?>">Already have an account?Login</a><br>
+    <button type="submit" class="btn btn-primary" name="update"><a href="<?php echo base_url('login');?>" style="color:white;text-decoration:none;">Sign Up</a></button>
+  <div class="dropdown-divider">
+  <a class="dropdown-item" href="<?php echo base_url('login');?>">Already have an account?Login</a><br>
 </div>  
-</div>  
+</div> 
+</div> 
 </form>
 </body>
 <style>
-body{position:relative;}
-.centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 5rem;
-    position: absolute;top: 50%;left: 50%;transform: translate(-50%, 0%);text-align: center;}
+body{position:relative;display: flex;justify-content: center;align-items: center;margin:0rem;height: 100vh;}
+.centered-text {background-color: rgba(100, 200, 10, 0.2);  padding: 0.3rem 5rem;text-align: center;
+   }
 label{position: absolute;left:0%;font-size: 1.3rem;}
 .Login_V div{position:relative;margin-top:1.4rem;}
 button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;
@@ -66,44 +67,10 @@ input:focus{outline: none;}
 .dropdown-divider { position: relative;padding: 10px 0px;}
 .mb-3 a{position: absolute;right: 0%;top:70%;}
 i{position: absolute; right:10px;top:55%;cursor: pointer;}
-.dropdown-divider a{position:relative;padding: 10px 0px;}
 .error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    body{position:relative;}
-.centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 1rem;position: absolute;}
-label{position: absolute;left:0%;font-size: 1.3rem;}
-.Login_V{position:relative;margin-top:1.3rem;}
-button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;padding: 10px;font-size: 1rem;}
-.login{font-size: 2rem;}
-.fa-eye{display: none;}
-input{padding:0.8rem 0.5rem;width:90vw;position: relative;margin-top:0.5rem;border-radius: 5px;border:none;}
-input:focus{outline: none;}
-.dropdown-divider {position: relative;padding: 10px 0px;}
-.mb-3 a{position: absolute;right: 0%;top:70%;}
-i{position: absolute; right:10px;top:40%;cursor: pointer;}
-.dropdown-divider a{position:relative;padding: 10px 0px;}
-.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
-.login_failed{position:absolute;text-align: left;left:0%;color:red;top:80%;}   
-} 
+.dropdown-item{padding-bottom: 2rem;}
 
-@media screen and (max-width: 767px) {
-body{position:relative;}
-.centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 1rem;position: absolute;}
-label{position: absolute;left:0%;font-size: 1.3rem;}
-.Login_V{position:relative;margin-top:1.3rem;}
-button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;padding: 10px;font-size: 1rem;}
-.login{font-size: 2rem;}
-.fa-eye{display: none;}
-input{padding:0.8rem 0.5rem;width:80vw;position: relative;margin-top:0.5rem;border-radius: 5px;border:none;}
-input:focus{outline: none;}
-.dropdown-divider {position: relative;padding: 10px 0px;}
-.mb-3 a{position: absolute;right: 0%;top:70%;}
-i{position: absolute; right:10px;top:70%;cursor: pointer;}
-.dropdown-divider a{position:relative;padding: 10px 0px;}
-.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
-.login_failed{position:absolute;text-align: left;left:0%;color:red;top:80%;}   
-}
 </style>
 <script>
     const passwordi=document.getElementById('FormPassword1');

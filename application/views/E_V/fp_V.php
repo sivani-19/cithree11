@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="centered-text">
-  <form class="Login_V" action="<?php echo base_url('E_C/Login_C/forgetpassword')?>" method="post">
+  <form class="Login_V" action="<?php echo base_url('forgetpassword')?>" method="post">
     <h4 class="login">Forget Password</h4>
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label><br>
