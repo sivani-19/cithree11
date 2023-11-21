@@ -21,13 +21,13 @@
     </div>
     <div class="mb-3" id="password">
       <label for="password" class="form-label">Password</label><br>
-      <input type="password" class="form-control" id="FormPassword1" placeholder="Password" name="password"><br>
+      <input type="password" class="form-control" id="password" placeholder="Password" name="password" ><br>
       <i class="fa-regular fa-eye-slash"></i>
       <i class="fa-solid fa-eye"></i><br>
-      <span class="login_failed"><?php echo $this->session->flashdata('logined_failed');?></span>
+      <span class="login_failed" id="loginFailedMessage"><?php echo $this->session->flashdata('login_failed');?></span>
       <span class="error_message"><?php echo form_error('password');?></span>
       </div>
-    <button type="submit" class="btn btn-primary" name="update">Sign in</button>
+    <button type="submit" class="btn btn-primary" name="update" id="submit">Sign in</button>
   </form>
 </div>
   <div class="dropdown-divider"></div>
@@ -43,7 +43,7 @@ body{position:relative;display: flex;text-align: center;justify-content: center;
     position: absolute;text-align: center;   
   }
 label{position: absolute;left:0%;font-size: 1.3rem;}
-.Login_V div{position:relative;margin-top:1.2rem;}
+.Login_V div{position:relative;margin-top:1rem;}
 button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;
     padding: 10px;font-size: 1rem;}
 .login{font-size: 2rem;}
@@ -52,9 +52,9 @@ input{padding:0.8rem 0.5rem;width:20vw;position: relative;margin-top:0.5rem;bord
 input:focus{outline: none;}
 .dropdown-divider { position: relative;}
 .mb-3 a{position: absolute;right: 0%;top:70%;}
-i{position: absolute; right:10px;top:40%;cursor: pointer;}
+i{position: absolute; right:10px;top:45%;cursor: pointer;}
 .dropdown-divider a{position:relative;}
-.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:70%;}
+.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:64%;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;top: 80%;}
 .or{font-size: 1.2rem;}
 #forget_password{margin-top: 1rem;}
@@ -66,18 +66,18 @@ h4{font-size: 2rem;}
 .centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 1rem;
     position: absolute;}
 label{position: absolute;left:0%;font-size: 1.3rem;}
-.Login_V div{position:relative;margin-top:1rem;}
+.Login_V div{position:relative;margin-top:0.8rem;}
 button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;
     padding: 10px;font-size: 1rem;}
 .login{font-size: 2rem;}
 .fa-eye{display: none;}
-input{padding:0.8rem 0.5rem;width:80vw;position: relative;margin-top:1rem;border-radius: 5px;border:none;}
+input{padding:0.8rem 0.5rem;width:80vw;position: relative;margin-top:0.5rem;border-radius: 5px;border:none;font-size: 1.2rem;}
 input:focus{outline: none;}
 .dropdown-divider { position: relative;padding: 10px 0px;}
 .mb-3 a{position: absolute;right: 0%;top:70%;}
-i{position: absolute; right:10px;top:50%;cursor: pointer;font-size: 1.3rem;}
+i{position: absolute; right:10px;top:45%;cursor: pointer;font-size: 1.3rem;}
 .dropdown-divider a{position:relative;padding: 10px 0px;}
-.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:70%;}
+.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:66%;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;top:80%;}
 .btn{margin-bottom: 0rem;font-size: 1.3rem;}  
 #sign_up{font-size: 1.3rem;}
@@ -99,9 +99,9 @@ input{padding:0.8rem 0.5rem;width:50vw;position: relative;margin-top:2.2rem;bord
 input:focus{outline: none;}
 .dropdown-divider { position: relative;padding: 10px 0px;}
 .mb-3 a{position: absolute;right: 0%;top:70%;}
-i{position: absolute; right:10px;top:55%;cursor: pointer;font-size: 1.7rem;}
+i{position: absolute; right:10px;top:45%;cursor: pointer;font-size: 1.7rem;}
 .dropdown-divider a{position:relative;padding: 10px 0px;}
-.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:70%;font-size: 1.7rem;}
+.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:66%;font-size: 1.7rem;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;top:80%;} 
 #sign_up{font-size: 2rem;}
 #forget_password{font-size: 2rem;margin-top: 0.5rem;}
@@ -129,6 +129,16 @@ i{position: absolute; right:10px;top:55%;cursor: pointer;font-size: 1.7rem;}
             passwordh.style.display="none";
         }
     });
+    document.addEventListener('DOMContentLoaded', function() {
+    // Check if the error message is visible, if yes, hide the login failed message
+    var errorMessage = document.querySelector('.error_message');
+    var loginFailedMessage = document.getElementById('loginFailedMessage');
+
+    if (errorMessage.innerHTML !== '') {
+      loginFailedMessage.style.display = 'none';
+    }
+  });
+   
 </script>
 </html>
 

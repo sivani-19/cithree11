@@ -44,7 +44,7 @@
       <input type="password" class="form-control" id="FormPassword1" placeholder="Conform-Password" name="conform-password">
     <span class="error_message"><?php echo form_error('conform-password')?></span>
     </div>
-    <button type="submit" class="btn btn-primary" name="update"><a href="<?php echo base_url('login');?>" style="color:white;text-decoration:none;">Sign Up</a></button>
+    <button type="submit" class="btn btn-primary" name="update">Sign Up</button>
   <div class="dropdown-divider">
   <a class="dropdown-item" href="<?php echo base_url('login');?>">Already have an account?Login</a><br>
 </div>  
@@ -53,9 +53,10 @@
 </form>
 </body>
 <style>
-body{position:relative;display: flex;justify-content: center;align-items: center;margin:0rem;height: 100vh;}
-.centered-text {background-color: rgba(100, 200, 10, 0.2);  padding: 0.3rem 5rem;text-align: center;
+body{position:relative;display: flex;justify-content: center;align-items: center;height: 100vh;margin:4rem;}
+.centered-text {background-color: rgba(100, 200, 10, 0.2);  text-align: center;padding: 1rem 3rem;
    }
+   .login{font-size: 3rem;}
 label{position: absolute;left:0%;font-size: 1.3rem;}
 .Login_V div{position:relative;margin-top:1.4rem;}
 button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;
@@ -70,7 +71,44 @@ i{position: absolute; right:10px;top:55%;cursor: pointer;}
 .error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;}
 .dropdown-item{padding-bottom: 2rem;}
+@media screen and (max-width:768px)
+{
+  body{display: flex;justify-content: center;align-items: center;height: 100vh;margin:4rem;}
+.centered-text {background-color: rgba(100, 200, 10, 0.2);text-align: center;padding: 0rem 1rem;}
+label{position: absolute;left:0%;font-size: 1.3rem;}
+.Login_V div{position:relative;margin-top:1.4rem;}
+h4{padding-top: 1rem;}
+button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;
+    padding: 10px;font-size: 1rem;}
+.login{font-size: 2rem;}
+.fa-eye{display: none;}
+input{padding:0.8rem 0.5rem;width:80vw;position: relative;margin-top:0.5rem;border-radius: 5px;border:none;font-size: 1.3rem;}
+input:focus{outline: none;}
+.dropdown-divider { position: relative;padding: 10px 0px;}
+.mb-3 a{position: absolute;right: 0%;top:70%;}
+i{position: absolute; right:10px;top:55%;cursor: pointer;}
+.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
+.login_failed{position:absolute;text-align: left;left:0%;color:red;}
+.dropdown-item{padding-bottom: 2rem;}
+}
+@media only screen and (max-device-width: 1024px) and (min-device-width:768px) {
+body{display: flex;justify-content: center;align-items: center;height: 100vh;margin:0rem;}
+.centered-text {background-color: rgba(100, 200, 10, 0.2);text-align: center;padding: 1rem 3rem;}
+label{position: absolute;left:0%;font-size: 1.8rem;}
 
+.Login_V div{position:relative;margin-top:2.4rem;}
+button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;padding: 10px;font-size: 1rem;}
+.login{font-size: 2rem;}
+.fa-eye{display: none;}
+input{padding:0.8rem 0.5rem;width:70vw;position: relative;margin-top:1.2rem;border-radius: 5px;border:none;font-size: 1.8rem;}
+input:focus{outline: none;}
+.dropdown-divider { position: relative;padding: 10px 0px;}
+.mb-3 a{position: absolute;right: 0%;top:70%;}
+i{position: absolute; right:10px;top:55%;cursor: pointer;}
+.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;font-size: 1.6rem;}
+.login_failed{position:absolute;text-align: left;left:0%;color:red;}
+.dropdown-item{padding-bottom: 2rem;}
+}
 </style>
 <script>
     const passwordi=document.getElementById('FormPassword1');

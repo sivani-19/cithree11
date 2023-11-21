@@ -6,17 +6,27 @@ class E_M extends CI_Model{
     {
         return $query;
     }
+    else if($query->num_rows()<0)
+    {
+    $query=$this->db->get_where('ecom1',array('email'=>$email));
+    if($query->num_rows()>0)
+    {
+        return false;
+    }
+}
+    
+    
 }
 public function register($data)
 {
     $query=$this->db->insert('ecom1',$data);
     $sql=$this->db->last_query();
     print_r($sql);
+    return true;
 }
 public function update($data){
     $query=$this->db->update('ecom1',$data);
-    $sql=$this->db->last_query();
-    print_r($sql);
+   return true;
 }
 public function product_dashboard(){
     $query=$this->db->get('prod');

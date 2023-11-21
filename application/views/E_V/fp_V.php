@@ -38,7 +38,7 @@ body{position:relative;display: flex;text-align: center;justify-content: center;
 .centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 5rem;
     position: absolute;text-align: center; }
 label{position: absolute;left:0%;font-size: 1.3rem;}
-.Login_V div{position:relative;margin-top:1.4rem;}
+.Login_V div{position:relative;margin-top:2rem;}
 button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;
     padding: 10px;font-size: 1rem;}
 .login{font-size: 2rem;}
@@ -51,39 +51,42 @@ i{position: absolute; right:10px;top:55%;cursor: pointer;}
 .dropdown-divider a{position:relative;padding: 10px 0px;}
 .error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    body{position:relative;}
-.centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 1rem;position: absolute;}
-label{position: absolute;left:0%;font-size: 1.3rem;}
+
+
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+body{position:relative;}
+.centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1.3rem 1rem;position: absolute;}
+label{position: absolute;left:0%;font-size: 1.8rem;}
 .Login_V{position:relative;margin-top:1.3rem;}
-button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;padding: 10px;font-size: 1rem;}
+button{position:relative;margin-top:3rem;color:white;background-color: black;border-radius: 5px;border:none;padding: 10px;font-size: 1.8rem;}
 .login{font-size: 2rem;}
 .fa-eye{display: none;}
-input{padding:0.8rem 0.5rem;width:90vw;position: relative;margin-top:0.5rem;border-radius: 5px;border:none;}
+input{padding:0.7rem 0.5rem;width:60vw;position: relative;margin-top:1rem;border-radius: 5px;border:none;font-size: 1.8rem;}
 input:focus{outline: none;}
 .dropdown-divider {position: relative;padding: 10px 0px;}
 .mb-3 a{position: absolute;right: 0%;top:70%;}
 i{position: absolute; right:10px;top:55%;cursor: pointer;}
 .dropdown-divider a{position:relative;padding: 10px 0px;}
-.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
+.error_message{ text-align: left;   color:red;left:0%;top:78%;font-size: 1.5rem;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;}   
 } 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 body{position:relative;}
 .centered-text {background-color: rgba(100, 200, 10, 0.2);  border-radius: 10px;padding: 1rem 1rem;position: absolute;}
-label{position: absolute;left:0%;font-size: 1.3rem;}
-.Login_V{position:relative;margin-top:1.3rem;}
-button{position:relative;margin-top:2rem;color:white;background-color: black;border-radius: 5px;border:none;padding: 10px;font-size: 1rem;}
+label{position: absolute;left:0%;font-size: 1.4rem;}
+.Login_V{position:relative;margin-top:1.4rem;}
+button{position:relative;margin-top:2.5rem;color:white;background-color: black;border-radius: 5px;border:none;padding: 10px;font-size: 1rem;}
 .login{font-size: 2rem;}
 .fa-eye{display: none;}
-input{padding:0.8rem 0.5rem;width:80vw;position: relative;margin-top:0.5rem;border-radius: 5px;border:none;}
+input{padding:0.8rem 0.5rem;width:80vw;position: relative;margin-top:0.5rem;border-radius: 5px;border:none;font-size: 1.4rem;}
 input:focus{outline: none;}
 .dropdown-divider {position: relative;padding: 10px 0px;}
 .mb-3 a{position: absolute;right: 0%;top:70%;}
 i{position: absolute; right:10px;top:55%;cursor: pointer;}
 .dropdown-divider a{position:relative;padding: 10px 0px;}
-.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;}
+.error_message{ position:absolute; text-align: left;   color:red;left:0%;top:80%;font-size: 1.3rem;}
 .login_failed{position:absolute;text-align: left;left:0%;color:red;}   
 }
 </style>

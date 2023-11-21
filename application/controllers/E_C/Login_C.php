@@ -20,7 +20,7 @@ else
     if($result==false)
     {
        $this->session->set_flashdata('login_failed','Incorrect password');
-       $this->load->view('Lg_V/l_V');
+       $this->load->view('E_V/login_V');
     }
   if($result!=NULL)
     {
@@ -33,14 +33,7 @@ else
 
     }
 }
-   else if($result===false){
-        $this->session->set_flashdata('logined_failed','Enter a Correct Password');
-        $this->load->view('E_V/login_V');
-    }
-   else if($result==='usernotfound'){
-         $this->session->set_flashdata('no_data_found','Enter a Correct email');
-         $this->load->view('E_V/login_V');
-   }
+  
     
  }
 }
@@ -48,6 +41,7 @@ public function register(){
 
     $this->form_validation->set_rules('FirstName','First Name','required');
     $this->form_validation->set_rules('lastName','last Name','required');
+    $this->form_validation->set_rules('Username','Username','required');
     $this->form_validation->set_rules('email','email-id','required|is_unique[ecom1.email]');
     $this->form_validation->set_rules('password','password','required');
     $this->form_validation->set_rules('conform-password','conform-password','required|matches[password]');
@@ -65,7 +59,7 @@ public function register(){
         $result=$this->E_M->register($data);
         if($result==true)
         {
-            $this->load->view('E_V/Login_V');
+            redirect('login');
         }
     }
 }
@@ -82,6 +76,10 @@ public function forgetpassword(){
             'password'=>$this->input->post('password'),
         );
         $result=$this->E_M->update($data);
+        if($result==true)
+        {
+            redirect('login');
+        }
     }
 }
 public function dashboard(){
